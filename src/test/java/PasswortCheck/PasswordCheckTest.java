@@ -6,19 +6,6 @@ import org.junit.jupiter.api.Test;
 
 class PasswordCheckTest {
 
-/*	@Test
-	 void passwordLenght_moreThanFour_returnTrue() {
-		
-	  int pwdMin = 4;
-	 
-	  int expected = (4);
-	  
-	  int result = password.length();
-	  
-	   
-	  assertEquals(expected, result);
-	 }
-*/	
 	
 	@Test
 	void hasMoreThanSevenCharacters_whenStringHasMoreThanSevenCharacters_thenReturnTrue() {
@@ -54,7 +41,7 @@ class PasswordCheckTest {
 		@Test
 		void passwordAreNotStrong_thenReturnTrue() {
 			//given
-			String password = "Passwort";
+			String password = "Passdwort";
 			//when
 			boolean result = PasswordCheck.passwordAreNotStrong(password);
 			//then
